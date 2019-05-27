@@ -2,6 +2,7 @@ package com.prakharjain.ComparableComparator;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashSet;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -9,6 +10,13 @@ public class MovieTest {
 	public static void main(String[] args)
 	{
 		ArrayList<Movie> list = new ArrayList<Movie>();
+		
+		
+		HashSet<String> set = new HashSet<String>();
+		boolean b = set.add("Ramya");
+		boolean b1 = set.add("Amit");
+		
+		
 		list.add(new Movie("Tare Zameen par", 8.4, 2010));
 		list.add(new Movie("2 States", 9.4, 2017));
 		list.add(new Movie("A Wednesday", 8.4, 2011));
