@@ -6,6 +6,7 @@ public class QuickSort {
 	{
 		int index = partition(arr,left,right);//10,9,8,7,6,5,4,3,2,1
 		
+		
 		//System.out.println("index:"+index);
 		if(left < index -1)
 			QuicksortImpl(arr,left,index-1);

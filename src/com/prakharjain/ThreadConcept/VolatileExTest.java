@@ -1,4 +1,4 @@
-package com.prakharjain.ThreadConcept;
+/*package com.prakharjain.ThreadConcept;
 
 import java.util.Scanner;
 
@@ -15,3 +15,4 @@ public class VolatileExTest {
 	}
 }
 
+*/

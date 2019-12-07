@@ -23,14 +23,20 @@ public class MovieTest {
 		list.add(new Movie("3 Idiots", 8.48, 2000));
 		list.add(new Movie("Lagaan", 8.4, 2010));
 		list.add(new Movie("Chak De India", 8.9, 2018));
+		list.add(new Movie("A Day", 8.9, 2018));
+		list.add(new Movie("A Day Ball", 9.3, 2018));
+		list.add(new Movie("A Day AA", 8.7, 2018));
+		list.add(new Movie("A Eay ZZ", 8.9, 2018));
+		list.add(new Movie("A Day KK", 9.3, 2018));
+		list.add(new Movie("A Day AAAAAA", 8.7, 2018));
 		
 		Collections.sort(list);
-		//System.out.println(list.stream().collect(Collectors.toList()));
+		System.out.println("Movie List");
 		for (Movie movie : list) {
 			System.out.println(movie.getRating()+"  Name:"+movie.getName()+"  Year"+movie.getYear());
 		}
 		
-		RatingCompare ratingCompare = new RatingCompare();
+		
 		NameCompare nameCompare = new NameCompare();
 		
 		Collections.sort(list, nameCompare);
@@ -39,7 +45,7 @@ public class MovieTest {
 			System.out.println("Rating:"+ movie.getRating() +"  Name:"+ movie.getName()+"  Year:"+movie.getYear());
 		}
 
-		
+		RatingCompare ratingCompare = new RatingCompare();
 		Collections.sort(list, ratingCompare);
 		System.out.println("Rating Compare");
 		for (Movie movie : list) {

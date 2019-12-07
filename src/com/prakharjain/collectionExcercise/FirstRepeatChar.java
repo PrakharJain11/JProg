@@ -15,7 +15,7 @@ public class FirstRepeatChar {
 		list.add("C");
 		list.add("D");
 
-		list.sub
+		//list.sub
 		
 		HashMap<Character, Integer> map = new LinkedHashMap();
 		for(char c:str.toCharArray())

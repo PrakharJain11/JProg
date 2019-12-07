@@ -1,5 +1,6 @@
 package com.prakhar.MapSort;
 
+import java.util.LinkedList;
 import java.util.TreeMap;
 
 public class MapSort {
@@ -7,6 +8,8 @@ public class MapSort {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		TreeMap<Integer,String> tm = new TreeMap<Integer, String>((I1,I2)->(I1>I2)?-1:(I2>I1)?1:0);
+		LinkedList list = new LinkedList();
+		
 		tm.put(1, "Ram");
 		tm.put(10, "Krishna");
 		tm.put(5, "Gopu");
